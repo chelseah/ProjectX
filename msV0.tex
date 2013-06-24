@@ -1,3 +1,45 @@
-\documentclass[]{emulateapj}
+\documentclass[apjl]{emulateapj}
+
+\shorttitle{shorttitle}
+\shortauthors{shortauthors}
+
+
+%%% packages
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xspace}
+%\usepackage{array}
+\usepackage{lineno}
+
+\newcommand{\myemail}{email@email.com}
+
 \begin{document}
+\linenumbers
+
+\title{Title}
+
+\author{First Author\altaffilmark{1} and
+Second Author\altaffilmark{2}}
+
+\altaffiltext{1}{Affil2; \email{\myemail}}
+\altaffiltext{2}{Affil1}
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+\keywords{keywords}
+
+\section{Introduction}
+\label{sec:introduction}
+
+\section{Method}
+\label{sec:method}
+
+\section{Analysis}
+\label{sec:analysis}
+
+\section{Discussion}
+\label{sec:discussion}
+
 \end{document}
