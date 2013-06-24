@@ -1,4 +1,5 @@
 TEX = latex
+BIBTEX = bibtex
 TOPS = dvips
 TOPDF = ps2pdf
 SUB = msV0
@@ -16,10 +17,12 @@ $(PROG_PS) : $(OBJ_DVI)
 	$(TOPDF) $(OBJ_DVI)
 
 $(OBJ_TEX) : $(TARG_TEX) 
-	$(TEX) $(TARG_TEX)
-	$(TEX) $(TARG_TEX)
-	$(TEX) $(TARG_TEX)
-	
+	$(TEX) $(SUB)
+	$(BIBTEX) $(SUB)
+	$(TEX) $(SUB)
+	$(TEX) $(SUB)
+
+
 $(OBJ_DVI) : $(OBJ_TEX)
 	$(TOPS) $(OBJ_TEX)
 
@@ -31,3 +34,5 @@ clean:
 	$(RM) ${SUB}.pdf
 	$(RM) ${SUB}.log
 	$(RM) ${SUB}.aux
+	$(RM) ${SUB}.bbl
+	$(RM) ${SUB}.bbg
