@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  25 JUN 2013 20:19
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  25 JUN 2013 20:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,23 +346,23 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 File: LS.eps Graphic file (type eps)
  <LS.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 
  []
 
 (./msV0.bbl) [1] (./msV0.aux) ) 
 Here is how much of TeX's memory you used:
  4052 strings out of 493634
- 51006 string characters out of 3143401
- 136239 words of memory out of 3000000
+ 51004 string characters out of 3143401
+ 137239 words of memory out of 3000000
  7311 multiletter control sequences out of 15000+200000
  12866 words of font info for 53 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 35i,7n,29p,215b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,7n,29p,253b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on msV0.dvi (1 page, 5624 bytes).
+Output written on msV0.dvi (1 page, 5912 bytes).

@@ -16,7 +16,7 @@
 \begin{document}
 \linenumbers
 
-\title{Title}
+\title{Spin-orbit misalignment for the long period companion of KOI-368}
 
 \author{First Author\altaffilmark{1} and
 Second Author\altaffilmark{2}}
@@ -44,15 +44,17 @@ Abstract
 We estimate the rotation period of the host star by plotting the
 Lomb-Scargle periodogram
 \citep[][Figure~\ref{fig:LS}]{1976Ap&amp;SS..39..447L,1982ApJ...263..835S}
-for the Kepler PDC lightcurve, with primary transits masked. The
-resulting spectrum was checked by the CLEAN algorithm
+for the Kepler PDC long cadence lightcurve, with primary transits masked. The
+resulting peaks was checked by the CLEAN algorithm
 \citep{1987AJ.....93..968R}. We adopte the first significant peak at 1.19 days as
 the rotation period of the host star. [Justify with vsini]
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=7cm]{LS.eps}
-  \caption{caption}
+  \caption{Lomb-Scargle periodogram of the PDC lightcurve, with the
+    transits masked out. The lightcurve is rotationally modulated with
+  a period of 1.19 days.}
   \label{fig:LS}
 \end{figure}
 
@@ -78,7 +80,7 @@ parameters. For Kepler long cadence data, the model is modified by a
 probability distribution is explored via a Markov chain Monte Carlo
 (MCMC) analysis, using the \emph{emcee} MCMC ensemble sampler
 \citep{2012arXiv1202.3665F}. The likelihood function is given by
-$\exp(-\chi^2/2)$. For each transit, we scale the flux errors such
+$\exp(-\Delta\chi^2/2)$. For each transit, we scale the flux errors such
 that the reduced $\chi^2$ is at unity. This allows for errors other
 than photon noise to be taken into account.
 
