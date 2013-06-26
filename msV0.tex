@@ -1,5 +1,5 @@
-\documentclass[apjl]{emulateapj}
-
+\documentclass[preprint]{emulateapj}
+\input{newcommand_gen.tex}
 \shorttitle{shorttitle}
 \shortauthors{shortauthors}
 
@@ -33,8 +33,65 @@ Abstract
 \section{Introduction}
 \label{sec:introduction}
 
+%Kepler Obliquity measurement
+%\citet{Hirano:2012} 
+using the rotation period from the lightcurve and 
+then combined with the projected rotation period and stellar radius from 
+high-res spectrospcopy, measured the obliquity of 15 KOI systems. 
+
+%\citet{Barnes:2011} 
+use the asymmetry in the Kepler transit lightcurve of KOI-13 to measure 
+the spin-obital alignment angle. 
+
 \section{Method}
 \label{sec:method}
+
+{\bf KOI-368} is assigned as Kepler Object of Interesting in the 
+Batalha:2013 
+from the Quarter 1-6 data. It has a Kepler Input Catalog entry 6603043. 
+The KIC parameters of the star are $T_{\rm eff} = 9034 {\rm K}$,  
+$\rm logg=4.133$, and $\rm FeH = -0.028$, indicating it is a hot and 
+fast rotating star. 
+The transit parameter from Kepler catalog is $P = 110.3216019 day$, 
+$R=19.16$\rearth.
+We make use of the public Kepler Long Cadence (29.4min) (Q1-Q15) and 
+Short Cadence (59.s?) data (Q8-Q9) to study the photometry effect 
+predicted by 
+%\citet{Barnes:2009}
+The long cadence data consist of 11 transit althogether (assigned transit 
+number from epoch 0-11, with the 7th missing). The short cadence data 
+cover transit 5 and 6. 
+
+For transit fitting, we use the $\rm SAP\_FLUX$, the out of transit 
+variations are corrected by the following steps (\ref):
+
+a) removal of bad data points;
+
+b) correction of safe mode and tweaks;
+
+c) a set of cosine functions with minimum period of 1 day. 
+
+d) a 7th order polynomial fit on the out of transit parts. 
+
+For analysis of the rotation period of the star, we use the $\rm PDC\_FLUX$ 
+(\ref) (Q1-Q?). 
+
+{\bf TBD: the figure of the lightcurve itself?}
+
+%The gravity darkening model
+
+The gravity darkening model is generatied following 
+%\citet{Barnes:2009}
+The temperature profile on the stellar surface is determined by the local 
+effective gravity.
+\begin{equation}
+\frac{T}{T_{\rm pole}} \propto (\frac{g_{\rm eff}}{g_{\rm pole}})^{\beta}. 
+= F_{f,w} (r,\theta)
+\end{equation}
+f is the oblation of the star, (definition?), w is the nondimension 
+measure of the rotation rate, r and \theta are the normalized the position 
+parameters.
+The gravity darkening parameter $\beta$ is obtained by xxx. 
 
 
 % \begin{figure}[h!]
@@ -60,8 +117,8 @@ Lomb-Scargle periodogram
 \citep[][Figure~\ref{fig:LS}]{1976Ap&amp;SS..39..447L,1982ApJ...263..835S}
 for the Kepler PDC long cadence lightcurve, with primary transits masked. The
 resulting peaks was checked by the CLEAN algorithm
-\citep{1987AJ.....93..968R}. We adopte the first significant peak at 1.19 days as
-the rotation period of the host star. [Justify with vsini]
+\citep{1987AJ.....93..968R}. We adopte the first significant peak at 1.19 
+days as the rotation period of the host star. [Justify with vsini]
 
 \begin{figure}[h!]
   \centering
