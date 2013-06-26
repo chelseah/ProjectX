@@ -33,54 +33,54 @@ Abstract
 \section{Introduction}
 \label{sec:introduction}
 
-Text \citet{1995Natur.378..355M}
-
 \section{Method}
 \label{sec:method}
 
-% \subsection{Host star parameters}
-% \label{sec:host-star-parameters}
+\subsection{Host star parameters}
+\label{sec:host-star-parameters}
 
-% We estimate the rotation period of the host star by plotting the
-% Lomb-Scargle periodogram
-% \citep[][Figure~\ref{fig:LS}]{1976Ap&amp;SS..39..447L,1982ApJ...263..835S}
-% for the Kepler PDC lightcurve, with primary transits masked. The
-% resulting spectrum was checked by the CLEAN algorithm
-% \citep{1987AJ.....93..968R}. We adopte the first significant peak at 1.19 days as
-% the rotation period of the host star. 
+[APO observation and spectrum fitting]
 
-% \begin{figure}[h!]
-%   \centering
-%   \includegraphics[width=7cm]{LS.eps}
-%   \caption{caption}
-%   \label{fig:LS}
-% \end{figure}
+We estimate the rotation period of the host star by plotting the
+Lomb-Scargle periodogram
+\citep[][Figure~\ref{fig:LS}]{1976Ap&amp;SS..39..447L,1982ApJ...263..835S}
+for the Kepler PDC lightcurve, with primary transits masked. The
+resulting spectrum was checked by the CLEAN algorithm
+\citep{1987AJ.....93..968R}. We adopte the first significant peak at 1.19 days as
+the rotation period of the host star. [Justify with vsini]
 
-% \subsection{Transit lightcurve fitting}
-% \label{sec:transit-light-curve}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=7cm]{LS.eps}
+  \caption{caption}
+  \label{fig:LS}
+\end{figure}
 
-% The transit lightcurve is modelled using the
-% \citet{1972ApJ...174..617N} model, implemented in an adaption of the
-% JKTEBOP code \citep{1981AJ.....86..102P,2004MNRAS.351.1277S}. The
-% relevant free parameters are orbital period $P$, transit centre $T_0$,
-% normalised radius sum $R_\star+R_p / a$, radius ratio $R_p/R_\star$,
-% line of sight inclination $i$, and quadratic limb darkening
-% coefficients $c_1$ and $c_2$. Initial estimates of the limb darkening
-% coefficients are taken from \citet{2010A&amp;A...510A..21S}. Jump
-% parameters for the stellar oblation correction include the planet
-% orbit obliquity $\lambda$, stellar oblation $f$. The projection angle
-% between the stellar rotation axis and line of sight $i_\text{rot}$ is
-% fixed for the initial analysis, then set free to explore the potential
-% degeneracies. A flux offset for each transit event is calculated and
-% removed at each iteration, and is not included in the fit
-% parameters. For Kepler long cadence data, the model is modified by a
-% 30 minute boxcar smooth. The best fit parameters and the posterior
-% probability distribution is explored via a Markov chain Monte Carlo
-% (MCMC) analysis, using the \emph{emcee} MCMC ensemble sampler
-% \citep{2012arXiv1202.3665F}. The likelihood function is given by
-% $\exp(-\chi^2/2)$. For each transit, we scale the flux errors such
-% that the reduced $\chi^2$ is at unity. This allows for errors other
-% than photon noise to be taken into account.
+\subsection{Transit lightcurve fitting}
+\label{sec:transit-light-curve}
+
+The transit lightcurve is modelled using the
+\citet{1972ApJ...174..617N} model, implemented in an adaption of the
+JKTEBOP code \citep{1981AJ.....86..102P,2004MNRAS.351.1277S}. The
+relevant free parameters are orbital period $P$, transit centre $T_0$,
+normalised radius sum $R_\star+R_p / a$, radius ratio $R_p/R_\star$,
+line of sight inclination $i$, and quadratic limb darkening
+coefficients $c_1$ and $c_2$. Initial estimates of the limb darkening
+coefficients are taken from \citet{2010A&amp;A...510A..21S}. Jump
+parameters for the stellar oblation correction include the planet
+orbit obliquity $\lambda$, stellar oblation $f$. The projection angle
+between the stellar rotation axis and line of sight $i_\text{rot}$ is
+fixed for the initial analysis, then set free to explore the potential
+degeneracies. A flux offset for each transit event is calculated and
+removed at each iteration, and is not included in the fit
+parameters. For Kepler long cadence data, the model is modified by a
+30 minute boxcar smooth. The best fit parameters and the posterior
+probability distribution is explored via a Markov chain Monte Carlo
+(MCMC) analysis, using the \emph{emcee} MCMC ensemble sampler
+\citep{2012arXiv1202.3665F}. The likelihood function is given by
+$\exp(-\chi^2/2)$. For each transit, we scale the flux errors such
+that the reduced $\chi^2$ is at unity. This allows for errors other
+than photon noise to be taken into account.
 
 % Figure X plots 
 
