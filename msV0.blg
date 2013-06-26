@@ -2,46 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: msV0.aux
 The style file: apj.bst
-Database file #1: mybibfile.bib
+Database file #1: msV0Notes.bib
+Database file #2: mybibfile.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 1 entry,
+You've used 9 entries,
             3010 wiz_defined-function locations,
-            661 strings with 4719 characters,
-and the built_in function-call counts, 437 in all, are:
-= -- 38
-> -- 22
-< -- 1
-+ -- 7
-- -- 7
-* -- 33
-:= -- 84
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 19
-empty$ -- 28
-format.name$ -- 11
-if$ -- 85
+            722 strings with 5983 characters,
+and the built_in function-call counts, 3680 in all, are:
+= -- 331
+> -- 200
+< -- 6
++ -- 66
+- -- 67
+* -- 276
+:= -- 697
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 55
+chr.to.int$ -- 9
+cite$ -- 9
+duplicate$ -- 164
+empty$ -- 240
+format.name$ -- 84
+if$ -- 735
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 7
-num.names$ -- 4
-pop$ -- 7
+missing$ -- 9
+newline$ -- 31
+num.names$ -- 36
+pop$ -- 56
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 55
 quote$ -- 0
-skip$ -- 17
+skip$ -- 143
 stack$ -- 0
-substring$ -- 21
+substring$ -- 182
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 9
+type$ -- 81
 warning$ -- 0
-while$ -- 4
+while$ -- 35
 width$ -- 0
-write$ -- 13
+write$ -- 92

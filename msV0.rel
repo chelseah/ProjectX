@@ -1,0 +1,50 @@
+;; RefTeX parse info file
+;; File: /Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex
+;; User: yanjunzhou (Yanjun Zhou)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/")
+
+(label-numbers)
+
+(bof "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex")
+
+(toc "toc" "    1 Introduction" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 2 "1" "\\section{Introduction}" 497)
+
+("sec:introduction" "s" "Text \\citet{1995Natur.378..355M} \\section{Method}  \\subsection{} \\section{Analysis} \\label{sec:analy" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil)
+
+(toc "toc" "    2 Method" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 2 "2" "\\section{Method}" 580)
+
+("sec:method" "s" "\\subsection{} \\section{Analysis}  \\section{Discussion} \\label{sec:discussion} \\bibliographystyle{apj" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil)
+
+(toc "toc" "      2.1 Transit light curve modelling" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "2.1" "\\subsection{Transit light curve modelling}" 617)
+
+("sec:transit-light-curve" "s" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+(toc "toc" "      2.1  " "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "2.1" "\\subsection{}" 617)
+
+(toc "toc" "      2.1  " "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "2.1" "\\subsection{}" 617)
+
+(toc "toc" "    3 Analysis" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 2 "3" "\\section{Analysis}" 693)
+
+("sec:analysis" "s" "\\section{Discussion}  \\bibliographystyle{apj} \\bibliography{mybibfile} " "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil)
+
+(toc "toc" "    4 Discussion" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 2 "4" "\\section{Discussion}" 734)
+
+("sec:discussion" "s" "\\bibliographystyle{apj} \\bibliography{mybibfile} " "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil)
+
+(bib "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/mybibfile.bib")
+
+(eof "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex")
+))
+
