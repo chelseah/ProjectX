@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  25 JUN 2013 20:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  25 JUN 2013 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,25 +344,58 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-File: LS.eps Graphic file (type eps)
- <LS.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+File: obliq_model.eps Graphic file (type eps)
+
+<obliq_model.eps>
+Overfull \hbox (10.80827pt too wide) in paragraph at lines 48--49
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 
  []
 
-(./msV0.bbl) [1] (./msV0.aux) ) 
+File: LS.eps Graphic file (type eps)
+<LS.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+
+ []
+
+File: lightcurve.eps Graphic file (type eps)
+<lightcurve.eps>
+Overfull \hbox (10.80827pt too wide) in paragraph at lines 103--104
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
+
+ []
+
+[1] (./msV0.bbl) [2] (./msV0.aux) ) 
 Here is how much of TeX's memory you used:
- 4052 strings out of 493634
- 51004 string characters out of 3143401
- 137239 words of memory out of 3000000
- 7311 multiletter control sequences out of 15000+200000
+ 4059 strings out of 493634
+ 51105 string characters out of 3143401
+ 123239 words of memory out of 3000000
+ 7316 multiletter control sequences out of 15000+200000
  12866 words of font info for 53 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  35i,7n,29p,253b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on msV0.dvi (1 page, 5912 bytes).
+Output written on msV0.dvi (2 pages, 6284 bytes).
