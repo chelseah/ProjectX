@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{xspace}
+\usepackage{subfigure}
 %\usepackage{array}
 \usepackage{lineno}
 
@@ -34,36 +35,32 @@ Abstract
 \label{sec:introduction}
 
 %Kepler Obliquity measurement
-%\citet{Hirano:2012} 
+\citet{Hirano:2012} 
 using the rotation period from the lightcurve and 
 then combined with the projected rotation period and stellar radius from 
 high-res spectrospcopy, measured the obliquity of 15 KOI systems. 
 
-%\citet{Barnes:2011} 
-use the asymmetry in the Kepler transit lightcurve of KOI-13 to measure 
-the spin-obital alignment angle. 
+\citet{Barnes:2011} use the asymmetry in the Kepler transit lightcurve of KOI-13 
+to measure the spin-obital alignment angle. 
 
 \section{Method}
 \label{sec:method}
 
 {\bf KOI-368} is assigned as Kepler Object of Interesting in the 
-Batalha:2013 
-from the Quarter 1-6 data. It has a Kepler Input Catalog entry 6603043. 
-The KIC parameters of the star are $T_{\rm eff} = 9034 {\rm K}$,  
+\citep{Batalha:2013} from the Quarter 1-6 data. It has a Kepler Input Catalog (KIC) 
+entry 6603043. The KIC parameters of the star are $T_{\rm eff} = 9034 {\rm K}$,  
 $\rm logg=4.133$, and $\rm FeH = -0.028$, indicating it is a hot and 
-fast rotating star. 
-The transit parameter from Kepler catalog is $P = 110.3216019 day$, 
-$R=19.16$\rearth.
+fast rotating star. The transit parameter from Kepler catalog is 
+$P = 110.3216019 day$ and $R=19.16$\rearth.
 We make use of the public Kepler Long Cadence (29.4min) (Q1-Q15) and 
-Short Cadence (59.s?) data (Q8-Q9) to study the photometry effect 
-predicted by 
-%\citet{Barnes:2009}
-The long cadence data consist of 11 transit althogether (assigned transit 
-number from epoch 0-11, with the 7th missing). The short cadence data 
-cover transit 5 and 6. 
+Short Cadence (58.84s) data (Q8-Q9) to study the photometry effect 
+predicted by \citet{Barnes:2009}.
+The long cadence \lcs consist of 11 transit althogether (assigned transit 
+number from epoch 0-11, the 7th transit is not observed by Kepler due to data gap). 
+The short cadence \lcs has transit 5 and 6. 
 
 For transit fitting, we use the $\rm SAP\_FLUX$, the out of transit 
-variations are corrected by the following steps (\ref):
+variations are corrected by the following steps from \citet{Huang:2013}:
 
 a) removal of bad data points;
 
@@ -73,25 +70,31 @@ c) a set of cosine functions with minimum period of 1 day.
 
 d) a 7th order polynomial fit on the out of transit parts. 
 
-For analysis of the rotation period of the star, we use the $\rm PDC\_FLUX$ 
-(\ref) (Q1-Q?). 
+For analysis of the rotation period of the star, we use the Q1-Q9 
+$\rm PDC\_FLUX$ \citep{Smith:2012} calibrated by the Kepler team. 
 
 {\bf TBD: the figure of the lightcurve itself?}
 
 %The gravity darkening model
 
 The gravity darkening model is generatied following 
-%\citet{Barnes:2009}
+\citet{Barnes:2009}
 The temperature profile on the stellar surface is determined by the local 
 effective gravity.
 \begin{equation}
 \frac{T}{T_{\rm pole}} \propto (\frac{g_{\rm eff}}{g_{\rm pole}})^{\beta}. 
-= F_{f,w} (r,\theta)
+= F_{f,w} (r,\theta).
 \end{equation}
-f is the oblation of the star, (definition?), w is the nondimension 
-measure of the rotation rate, r and \theta are the normalized the position 
-parameters.
-The gravity darkening parameter $\beta$ is obtained by xxx. 
+f is the oblation of the star, defined as 
+$\frac{R_{\rm eq}-R{\rm pole}}{R_{\rm eq}}$. $w$ is the nondimension 
+measure of the rotation rate ($w=\Omega_{ror}/\Omega_{grav}$, in which 
+$\Omega_{\rm ror}$ is the stellar rotation rate in radians per second, 
+$\Omega_{\rm grav}$ is the agular velocity due to gravity at the equator, 
+$\Omega_{\rm grav}^2 = GM/R_{\rm eq}$). r and $\theta$ are the normalized 
+the position parameters. We use the gravity darkening coefficient computed 
+for Kepler band using ATLAS code from \citet{Claret:2011}. By assuming the 
+distribution of errors in the stellar parameters to be gaussian, we obtain 
+the gravity darkening parameter $\beta$ to be ?.
 
 
 % \begin{figure}[h!]
@@ -165,6 +168,25 @@ than photon noise to be taken into account.
 \section{Analysis}
 \label{sec:analysis}
 
+We use the flux weighted first momentum centroids produced by Kepler 
+pipeline to rule out the background binary sinario. In Figure \ref{}  
+
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{TTV.eps}
+\end{figure}
+
+\begin{figure}
+\subfigure[]
+{
+\includegraphics[width=0.45\linewidth]{APOimage.eps}
+\label{fig:APO}
+}
+\subfigure[]{
+\includegraphics[width=0.45\linewidth]{centroid.eps}
+\label{fig:centroid}
+}
+\end{figure}
 \section{Discussion}
 \label{sec:discussion}
 
