@@ -15,7 +15,7 @@
 
 (master-dir . "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/")
 
-(label-numbers)
+(label-numbers ("eq:" . 2))
 
 (bof "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex")
 
@@ -27,9 +27,27 @@
 
 ("sec:method" "s" "\\subsection{} \\section{Analysis}  \\section{Discussion} \\label{sec:discussion} \\bibliographystyle{apj" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil)
 
+("fig:obliq_model" "f" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+("fig:obliq" "f" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+("fig:obliq_model" "f" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+(toc "toc" "      2.1 Host star parameters" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "2.1" "\\subsection{Host star parameters}" 910)
+
+("sec:host-star-parameters" "s" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+("fig:LS" "f" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
 (toc "toc" "      2.1 Transit light curve modelling" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "2.1" "\\subsection{Transit light curve modelling}" 617)
 
 ("sec:transit-light-curve" "s" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+("fig:lightcurve" "f" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+("fig:posterior" "f" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+("eq:1" "e" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
 
 (toc "toc" "      2.1  " "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "2.1" "\\subsection{}" 617)
 
@@ -39,9 +57,21 @@
 
 ("sec:analysis" "s" "\\section{Discussion}  \\bibliographystyle{apj} \\bibliography{mybibfile} " "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil)
 
+(toc "toc" "      3.1 Nature of the companion" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "3.1" "\\subsection{Nature of the companion}" 4595)
+
+("sec:nature-companion" "s" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+(toc "toc" "      3.2 System eccentricity" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 3 "3.2" "\\subsection{System eccentricity}" 5580)
+
+("sec:system-eccentricity" "s" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
+("eq:2" "e" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
+
 (toc "toc" "    4 Discussion" "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil 2 "4" "\\section{Discussion}" 734)
 
 ("sec:discussion" "s" "\\bibliographystyle{apj} \\bibliography{mybibfile} " "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil)
+
+("fig:periodobliq" "f" nil "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/msV0.tex" nil "")
 
 (bib "/Users/yanjunzhou/Documents/hat-south/2013/koi368/ProjectX/mybibfile.bib")
 
