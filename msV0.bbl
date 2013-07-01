@@ -1,0 +1,46 @@
+\begin{thebibliography}{12}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Barnes}(2007)}]{Barnes2007}
+{Barnes}, J.~W. 2007, \pasp, 119, 986
+
+\bibitem[{{Burke}(2008)}]{Burke2008}
+{Burke}, C.~J. 2008, \apj, 679, 1566
+
+\bibitem[{{Foreman-Mackey} {et~al.}(2012){Foreman-Mackey}, {Hogg}, {Lang}, \&
+  {Goodman}}]{ForemanMackey2012}
+{Foreman-Mackey}, D., {Hogg}, D.~W., {Lang}, D., \& {Goodman}, J. 2012, ArXiv
+  e-prints
+
+\bibitem[{{Kane} {et~al.}(2012){Kane}, {Ciardi}, {Gelino}, \& {von
+  Braun}}]{Kane2012}
+{Kane}, S.~R., {Ciardi}, D.~R., {Gelino}, D.~M., \& {von Braun}, K. 2012,
+  \mnras, 425, 757
+
+\bibitem[{{Lomb}(1976)}]{Lomb1976}
+{Lomb}, N.~R. 1976, \apss, 39, 447
+
+\bibitem[{{Mandel} \& {Agol}(2002)}]{Mandel2002}
+{Mandel}, K., \& {Agol}, E. 2002, \apjl, 580, L171
+
+\bibitem[{{Nelson} \& {Davis}(1972)}]{Nelson1972}
+{Nelson}, B., \& {Davis}, W.~D. 1972, \apj, 174, 617
+
+\bibitem[{{Popper} \& {Etzel}(1981)}]{Proper1981}
+{Popper}, D.~M., \& {Etzel}, P.~B. 1981, \aj, 86, 102
+
+\bibitem[{{Roberts} {et~al.}(1987){Roberts}, {Lehar}, \&
+  {Dreher}}]{Roberts1987}
+{Roberts}, D.~H., {Lehar}, J., \& {Dreher}, J.~W. 1987, \aj, 93, 968
+
+\bibitem[{{Scargle}(1982)}]{Scargle1982}
+{Scargle}, J.~D. 1982, \apj, 263, 835
+
+\bibitem[{{Sing}(2010)}]{Sing2010}
+{Sing}, D.~K. 2010, \aap, 510, A21
+
+\bibitem[{{Southworth} {et~al.}(2004){Southworth}, {Maxted}, \&
+  {Smalley}}]{Southworth2004}
+{Southworth}, J., {Maxted}, P.~F.~L., \& {Smalley}, B. 2004, \mnras, 351, 1277
+
+\end{thebibliography}

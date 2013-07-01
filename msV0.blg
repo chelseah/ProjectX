@@ -10,6 +10,7 @@ Warning--entry type for "apsrev41Control" isn't style-file defined
 Database file #2: mybibfile.bib
 Warning--to sort, need author or key in REVTEX41Control
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+<<<<<<< HEAD
 Warning--empty year in REVTEX41Control; set to ????
 You've used 17 entries,
             3085 wiz_defined-function locations,
@@ -53,3 +54,46 @@ while$ -- 60
 width$ -- 0
 write$ -- 168
 (There were 4 warnings)
+=======
+You've used 12 entries,
+            3010 wiz_defined-function locations,
+            743 strings with 6279 characters,
+and the built_in function-call counts, 4894 in all, are:
+= -- 439
+> -- 262
+< -- 8
++ -- 87
+- -- 88
+* -- 366
+:= -- 927
+add.period$ -- 12
+call.type$ -- 12
+change.case$ -- 73
+chr.to.int$ -- 12
+cite$ -- 12
+duplicate$ -- 217
+empty$ -- 323
+format.name$ -- 107
+if$ -- 980
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 12
+newline$ -- 40
+num.names$ -- 48
+pop$ -- 73
+preamble$ -- 1
+purify$ -- 73
+quote$ -- 0
+skip$ -- 192
+stack$ -- 0
+substring$ -- 251
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 108
+warning$ -- 0
+while$ -- 47
+width$ -- 0
+write$ -- 122
+>>>>>>> 1c40ae54a995ca49ff7741c3848963e981f248ae
