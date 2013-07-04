@@ -34,83 +34,40 @@ Abstract
 \section{Introduction}
 \label{sec:introduction}
 
-<<<<<<< HEAD
-%Kepler Obliquity measurement
 \citet{Hirano:2012} 
-using the rotation period from the lightcurve and 
+using the rotation period from the \lc\ and 
 then combined with the projected rotation period and stellar radius from 
-high-res spectrospcopy, measured the obliquity of 15 KOI systems. 
+high-res spectroscopy, measured the obliquity of 15 KOI systems. 
 
-\citet{Barnes:2011} use the asymmetry in the Kepler transit lightcurve of KOI-13 
-to measure the spin-obital alignment angle. 
+\citet{Barnes:2011} use the asymmetry in the Kepler transit \lc\ of 
+KOI-13 to measure the spin-orbital alignment angle. 
 
-\section{Method}
-\label{sec:method}
-
-{\bf KOI-368} is assigned as Kepler Object of Interesting in the 
-\citep{Batalha:2013} from the Quarter 1-6 data. It has a Kepler Input Catalog (KIC) 
-entry 6603043. The KIC parameters of the star are $T_{\rm eff} = 9034 {\rm K}$,  
-$\rm logg=4.133$, and $\rm FeH = -0.028$, indicating it is a hot and 
-fast rotating star. The transit parameter from Kepler catalog is 
-$P = 110.3216019 day$ and $R=19.16$\rearth.
-We make use of the public Kepler Long Cadence (29.4min) (Q1-Q15) and 
-Short Cadence (58.84s) data (Q8-Q9) to study the photometry effect 
-predicted by \citet{Barnes:2009}.
-The long cadence \lcs consist of 11 transit althogether (assigned transit 
-number from epoch 0-11, the 7th transit is not observed by Kepler due to data gap). 
-The short cadence \lcs has transit 5 and 6. 
-
-For transit fitting, we use the $\rm SAP\_FLUX$, the out of transit 
-variations are corrected by the following steps from \citet{Huang:2013}:
-
-a) removal of bad data points;
-
-b) correction of safe mode and tweaks;
-
-c) a set of cosine functions with minimum period of 1 day. 
-
-d) a 7th order polynomial fit on the out of transit parts. 
-
-For analysis of the rotation period of the star, we use the Q1-Q9 
-$\rm PDC\_FLUX$ \citep{Smith:2012} calibrated by the Kepler team. 
-
-{\bf TBD: the figure of the lightcurve itself?}
+%\section{Method}
+%\label{sec:method}
 
 %The gravity darkening model
-
-The gravity darkening model is generatied following 
-\citet{Barnes:2009}
-The temperature profile on the stellar surface is determined by the local 
-effective gravity.
-\begin{equation}
-\frac{T}{T_{\rm pole}} \propto (\frac{g_{\rm eff}}{g_{\rm pole}})^{\beta}. 
-= F_{f,w} (r,\theta).
-\end{equation}
-f is the oblation of the star, defined as 
-$\frac{R_{\rm eq}-R{\rm pole}}{R_{\rm eq}}$. $w$ is the nondimension 
-measure of the rotation rate ($w=\Omega_{ror}/\Omega_{grav}$, in which 
-$\Omega_{\rm ror}$ is the stellar rotation rate in radians per second, 
-$\Omega_{\rm grav}$ is the agular velocity due to gravity at the equator, 
-$\Omega_{\rm grav}^2 = GM/R_{\rm eq}$). r and $\theta$ are the normalized 
-the position parameters. We use the gravity darkening coefficient computed 
-for Kepler band using ATLAS code from \citet{Claret:2011}. By assuming the 
-distribution of errors in the stellar parameters to be gaussian, we obtain 
-the gravity darkening parameter $\beta$ to be ?.
-
-=======
 
 \section{KOI-368 stellar parameters}
 \label{sec:host-star-parameters}
 
+{\bf KOI-368} is assigned as an Kepler Object of Interesting (KOI) in the 
+\citet{Batalha:2013} Kepler catalog from the Quarter 1-6 data. It has a 
+Kepler Input Catalog (KIC) entry 6603043. The KIC parameters of the star are 
+$T_{\rm eff} = 9034 {\rm K}$, $\rm logg=4.133$, and $\rm FeH = -0.028$, 
+indicating it is a hot and fast rotating star.
+
+We took an high resolution (R$\sim$31500) spectrum of this star using 
+the ARC Echelle Spectrograph mounted on the Apache Point Observatory  
+3.5-meter telescope (APO 3.5m).
 [APO observation and spectrum fitting]
 
 The host star rotation period can be identified by searching for spot
-modulation in the Kepler long cadence PDC lightcurves. We masked out
-the primary transits and performed a Lomb-Scargle periodogram \citep[][]{Lomb1976,Scargle1982} analysis
-on the lightcurves. A significant peak at 1.19 days was identified,
-and checked by the CLEAN algorithm \citep{Roberts1987}. [This peak corresponds with vsini
-and was adopted as the rotation period of the star].
->>>>>>> 1c40ae54a995ca49ff7741c3848963e981f248ae
+modulation in the Kepler Long Cadence PDC \lcs\ \citep{Smith:2012} 
+from Q1-Q9. We masked out the primary transits and performed a Lomb-Scargle 
+periodogram \citep[][]{Lomb1976,Scargle1982} analysis
+on the \lcs. A significant peak at 1.19 days was identified,
+and checked by the CLEAN algorithm \citep{Roberts1987}. [This peak 
+corresponds with vsini and was adopted as the rotation period of the star].
 
 % \begin{figure}[h!]
 %   \centering
@@ -121,63 +78,110 @@ and was adopted as the rotation period of the star].
 %   \label{fig:LS}
 % \end{figure}
 
-\section{Orbit obliquity from lightcurve asymmetry}
+\section{Orbit obliquity from light curve asymmetry}
 \label{sec:transit-light-curve}
 
-\subsection{Lightcurve model}
+\subsection{Light curve model}
 \label{sec:lightcurve-model}
 
+We make use of the all the available public Kepler \lcs\ for our analysis 
+of the photometry effect predicted by \citet{Barnes:2009}. These include 
+Long Cadence (29.4min) data (Q0-Q15) and Short Cadence (58.84s) data (Q8-Q9). 
+The long cadence \lcs\ consist of 11 transit altogether (assigned 
+transit number from epoch 0-11, the 7th transit is not observed by Kepler 
+due to data gap). The short cadence \lcs\ have transit 5 and 6. 
+
+We start with the $\rm SAP\_FLUX$ obtained from the MAST arxive  
+\footnote{http://archive.stsci.edu/kepler/data$\_$search/search.php}, the out 
+of transit variations are corrected by the following steps from 
+\citet{Huang:2013}:
+
+a) removal of bad data points;
+
+b) correction of safe mode and tweaks;
+
+c) a set of cosine functions with minimum period of 1 day. 
+
+d) a 7th order polynomial fit on the out of transit parts. 
 \begin{figure}
   \centering
   \includegraphics[width=9cm]{obliq_model.eps}
-  \caption{f=0.2,beta=1.0,phi=0. Model using koi-368 system
+  \caption{f=0.2,$\beta=1.0$, $i_{\rm rot}=0$. Model using koi-368 system
     parameters (inc, rsum, rratio etc). 0, 45, 90 degree obliquity.}
   \label{fig:obliqmodel}
 \end{figure}
 
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=7cm]{LS.eps}
+%  \caption{Lomb-Scargle periodogram of the PDC lightcurve, with the
+%    transits masked out. The lightcurve is rotationally modulated with
+%  a period of 1.19 days.}
+%  \label{fig:LS}
+%\end{figure}
 
-[APO observation and spectrum fitting]
+\subsection{Gravity darkening modeling}
+\label{sec:grav-model}
+The gravity darkening model is generated following \citet{Barnes:2009}.
+The temperature profile on the stellar surface is determined by the local 
+effective gravity \citep{Zeipel:1924}. 
+\begin{equation}
+\frac{T}{T_{\rm pole}} \propto (\frac{g_{\rm eff}}{g_{\rm pole}})^{\beta} 
+= F_{f,w} (r,\theta).
+\end{equation}
+The the effective gravity is defined as 
+\begin{equation}
+\vec{g}_{\rm eff} = -\Omega_{\rm grav}^2\frac{R_{\rm eq}^3}{R^2}\hat{r} \\ 
++ \Omega_{ror}^2\,R_{\perp}\hat{r_{\perp}}
+\end{equation}
+We use $\Omega_{\rm ror}$ to measure the stellar rotation rate in radians 
+per second and $\Omega_{\rm grav}$ to represent the angular velocity due to 
+gravity at the equator, $\Omega_{\rm grav}^2 = GM/R_{\rm eq}^3.$). 
+The definition of the other symbols follow \citet{Barnes:2009} Eq.10, in 
+which $G$ is the gravitational constant, $M$ is the mass of the star, $R$ 
+and $R_{\perp}$ are the distance from the stellar center and stellar 
+rotation axis to the point of question, respectively. $\hat{r}$ and 
+$\hat{r_{\perp}}$ are unit vectors indicate the directions of $R$ and 
+$R_{\perp}$. 
+The effective gravity profile $\frac{g_{\rm eff}}{g_{\rm pole}}$ at the stellar 
+surface is a function of the oblation of the star $f$, defined as 
+$\frac{R_{\rm eq}-R{\rm pole}}{R_{\rm eq}}$, the non-dimension 
+measure of the rotation rate ($w=\Omega_{ror}/\Omega_{grav}$, 
+and the normalized position parameters $r$ and $\theta$. The 
+We use the gravity darkening coefficient computed 
+for Kepler band using ATLAS code from \citet{Claret:2011}. By assuming the 
+distribution of errors in the stellar parameters to be gaussian, we obtain 
+the gravity darkening parameter $\beta$ to be ?.
+We demonstrate the flux profile computed for KOI-368 system with $f=0.2$, 
+$\beta=1.0$ and assuming the stellar rotation axis is in the plane 
+perpendicular to our line of site ($i_{\rm rot}=0$) in Figure 
+\ref{fig:obliqmodel}. If the planet cross the hotter pole to colder 
+equator during its transits, the transit \lcs\ will show asymmetry depend 
+on the misalignment between the planet orbit and stellar rotation axis.
 
-We estimate the rotation period of the host star by plotting the
-Lomb-Scargle periodogram
-\citep[][Figure~\ref{fig:LS}]{1976Ap&amp;SS..39..447L,1982ApJ...263..835S}
-for the Kepler PDC long cadence lightcurve, with primary transits masked. The
-resulting peaks was checked by the CLEAN algorithm
-\citep{1987AJ.....93..968R}. We adopte the first significant peak at 1.19 
-days as the rotation period of the host star. [Justify with vsini]
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=7cm]{LS.eps}
-  \caption{Lomb-Scargle periodogram of the PDC lightcurve, with the
-    transits masked out. The lightcurve is rotationally modulated with
-  a period of 1.19 days.}
-  \label{fig:LS}
-\end{figure}
 
 \subsection{System parameter fitting}
 \label{sec:model-fitting}
 
-The transit lightcurve is modelled using the
+The transit \lcs\ are modeled using the
 \citet{Nelson1972} model, implemented in an adaption of the
 JKTEBOP code \citep{Proper1981,Southworth2004}. The
 relevant free parameters are orbital period $P$, transit centre $T_0$,
 normalised radius sum $R_\star+R_p / a$, radius ratio $R_p/R_\star$,
 line of sight inclination $i$. Quadratic limb darkening coefficients,
-$c_1$ and $c_2$, 
-are fitted for in an initial minimisation routine, with initial
-estimates taken from \citet{Sing2010}, then held fixed for subsequent analyses. Jump
-parameters for the stellar oblation correction include the planet
-orbit obliquity $\lambda$, stellar oblation $f$. The projection angle
-between the stellar rotation axis and line of sight $i_\text{rot}$ is
-fixed for an initial analysis, then set free to explore the potential
-degeneracies. The gravity darkening exponent $\beta$ is set to be
-fixed at 0.25 [cite], but also allowed free in subsequent analysis to
-explore degeneracies. A flux offset for each transit event is calculated and
-removed at each iteration, and is not included in the fit
-parameters. For Kepler long cadence data, the model is modified by a
-30 minute boxcar smooth. The best fit parameters and the posterior
-probability distribution is explored via a Markov chain Monte Carlo
+$c_1$ and $c_2$, are fitted for in an initial minimization routine, with 
+initial estimates taken from \citet{Sing2010}, then held fixed for 
+subsequent analyses. Jump parameters for the stellar oblation correction 
+include the planet orbit obliquity $\lambda$, stellar oblation $f$. The 
+projection angle between the stellar rotation axis and line of sight 
+$i_\text{rot}$ is fixed for an initial analysis, then set free to explore 
+the potential degeneracies. The gravity darkening exponent $\beta$ is set 
+to be fixed at (? see Section \S \ref{sec:grav-model}), but also allowed 
+free in subsequent analysis to explore degeneracies. A flux offset for each 
+transit event is calculated and removed at each iteration, and is not 
+included in the fit parameters. For Kepler long cadence data, the model is 
+modified by a 30 minute boxcar smooth. The best fit parameters and the 
+posterior probability distribution is explored via a Markov chain Monte Carlo
 (MCMC) analysis, using the \emph{emcee} MCMC ensemble sampler
 \citep{ForemanMackey2012}. The likelihood function is given by
 $\exp(-\Delta\chi^2/2)$. For each transit, we scale the flux errors such
@@ -187,8 +191,16 @@ than photon noise to be taken into account.
 Figure~\ref{fig:lightcurve} plots the phase folded transit lightcurve of
 KOI-368.01 and the best fit spherical and oblate models. The best fit
 spherical host star model cannot explain the significant in-transit
-asymmetry observed. The best fit parameters are presented in Table~\ref{tab:params}.
+asymmetry observed. 
 
+[compare with Kepler original parameters]
+The transit parameter from Kepler catalog is 
+$P = 110.3216019$ day and $R=19.16$\rearth.
+
+[restate the finding of oblation]
+We find the transit \lcs\ are more consistent with a model of ... 
+
+The best fit parameters are presented in Table~\ref{tab:params}.
 The posterior probability distributions for relevant parameters
 are plotted in Figure~\ref{fig:posterior}. We find a weak inverse dependency
 between $\lambda$ and $\beta$, and a positive dependency between
@@ -248,8 +260,8 @@ where $b = a \cos i/R_\star = 0.7$ is the transit impact parameter, and $v =
 the short cadence data, we measure ingress and egress durations to be
 equal to within errors of 0.7 minutes, constraining the maximum
 possible change in velocity to be $\Delta v <
-0.5\,\text{kms}^{-1}$. Figure~\ref{fig:eccmode} plots the difference between such an
-eccentric orbit lightcurve and its best fit circular orbit
+0.5\,\text{kms}^{-1}$. Figure~\ref{fig:eccmode} plots the difference 
+between such an eccentric orbit lightcurve and its best fit circular orbit
 lightcurve. The maximum in-transit distortions are $10
 \times$ smaller than that for the oblique orbit model. The maximum
 distortions during ingress and egress are $5\times$ smaller than that
@@ -266,7 +278,7 @@ therefore cannot be explained by an eccentric orbit.
     determined by measuring the difference in the ingress and egress
     duration. Eccentricity cannot explain the observe lightcurve
     asymmetry (Figure~\ref{fig:lightcurve}, middle panel).}
-  \label{fig:eccmodel}
+  \label{fig:ecc_model}
 \end{figure}
 
 
@@ -288,7 +300,28 @@ therefore cannot be explained by an eccentric orbit.
 \section{Nature of the companion}
 \label{sec:nature-companion}
 
-[Blends in images]
+To establish the planetary nature of KOI-368.01, we investigate in the 
+false positive scenarios of this system. We use the image from APO 3.5m 
+Echelle Slitviewer camera to rule out close by bright companions. The 
+camera has a field of view of 63.6$\arcsec$ and the pixel scale is 0.133\pxs. 
+We can rule out companion brighter than 20 mag within 20\sqarcsec\ 
+area of KOI-368 (See Figure \ref{fig:APO}). No candidate is found to be 
+a possible source of background blend. 
+
+We are able to use the upper limit of centroid displacement to rule out the 
+possibility that the transit signal is mimicked by background binaries. We 
+use the flux weighted first momentum centroids produced by Kepler 
+pipeline. The long time range trend in centroids due to the motion of 
+the space craft is corrected by a 7-th order polynomial on each quarter 
+of the Long Cadence data. For each Long Cadence transit [do we want to put 
+the SC points on as well?], we compare the centroids of star during the 
+transit with the centroids before and after the transit (within a window 
+of width the same as the transit duration). The displacements between the 
+mean centroids of the in-transit part and the out-of-transit part are shown 
+in Figure \ref{fig:centroid}. The error-bars are computed with the error 
+propagation rule by assuming the centroids in each window follows a 
+Gaussian distribution. The analysis shows that the signal could not be 
+from a source farther than 1$\arcsec$ away from the star KOI-368.  
 
 A stellar mass M-dwarf companion will cause a secondary eclipse in the
 lightcurve. We mask out the primary transit and remove large scale
@@ -303,6 +336,10 @@ must be of sub-stellar nature.
 
 \subsection{System eccentricity}
 \label{sec:system-eccentricity}
+
+The Transit Timing Variation (TTV) analysis for KOI-368.01 with the 
+11 transits from Long Cadence data prefer a solution without any high 
+amplitude TTV signal (See Figure \ref{fig:TTV}).
 
 The system eccentricity can be constrained by comparing the measured
 transit duration $(t_\text{obs}=13.2\,\text{hours})$ against that expected for a circular
@@ -322,28 +359,56 @@ eccentricity is constrained to be $>0.9$ for all $\omega$. In the case
 of a host star 30\% larger than quoted, we can place no constraints on
 eccentricity. 
 
-
-We use the flux weighted first momentum centroids produced by Kepler 
-pipeline to rule out the background binary sinario. In Figure \ref{}  
-
-
-\begin{figure}
-\includegraphics[width=0.9\linewidth]{TTV.eps}
-\end{figure}
-
 \begin{figure}
 \subfigure[]
 {
-\includegraphics[width=0.45\linewidth]{APOimage.eps}
+\includegraphics[width=0.4\linewidth]{APOimage_large.eps}
 \label{fig:APO}
 }
 \subfigure[]{
 \includegraphics[width=0.45\linewidth]{centroid.eps}
 \label{fig:centroid}
 }
+\caption{
+caption
+\label{fig:FPs}
+}
 \end{figure}
+
 \section{Discussion}
 \label{sec:discussion}
+
+We measured the asymmetry in the transit lightcurve of KOI-368.01, and 
+found it to be orbiting in a highly inclined plane of 
+$\lambda = 50\pm20^\circ$. With a period of 110.3 days, it is one of the 
+longest period planets for which spin-orbit alignment has been measured. 
+HD80606b, the only other long period single planetary system 
+with obliquity measured, has almost identical period and projected orbit 
+obliquity, is highly eccentric $e=0.93$. The high eccentrcity and obliquity 
+of the HD80606b system can be explained satisfily with Kozai cycle excited 
+by its main-sequence companion 1000 AU away \citep{WuMurray:2003}. 
+Curiously, we constrain the eccentricity of the KOI-368 system to be much 
+lower, $e = 0.07^{+0.18}_{-0.07}$. If Kozai cycle is responsible for this 
+high obliquity, the low eccentricity put it in a "quenched" stage of the 
+migration. Following Equation 12 of \citet{Socrates:2012}, this is 
+unlikely be caused by solar type companian within 100 AU or stellar type 
+companian within 50 AU. 
+But the age of the system (given the host is an A star 
+and an age indication from the spectrum analysis) is much younger than 
+the typical eccentricity dumping timescale (2-3 Gyrs).  
+
+
+In particular, the oblique orbit of KOI-368.01 ... 
+[important for migration theory X]
+
+
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{TTV.eps}
+\caption{caption
+\label{fig:TTV}}
+\end{figure}
+
 
 \begin{figure}[h]
   \centering

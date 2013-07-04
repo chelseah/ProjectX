@@ -8,92 +8,49 @@ Warning--entry type for "REVTEX41Control" isn't style-file defined
 Warning--entry type for "apsrev41Control" isn't style-file defined
 --line 2 of file msV0Notes.bib
 Database file #2: mybibfile.bib
+Warning--I didn't find a database entry for "Socrates:2012"
 Warning--to sort, need author or key in REVTEX41Control
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-<<<<<<< HEAD
 Warning--empty year in REVTEX41Control; set to ????
-You've used 17 entries,
+You've used 23 entries,
             3085 wiz_defined-function locations,
-            761 strings with 8615 characters,
-and the built_in function-call counts, 8114 in all, are:
-= -- 625
-> -- 650
-< -- 7
-+ -- 218
-- -- 225
-* -- 716
-:= -- 1565
-add.period$ -- 17
-call.type$ -- 17
-change.case$ -- 106
-chr.to.int$ -- 16
-cite$ -- 21
-duplicate$ -- 312
-empty$ -- 471
-format.name$ -- 248
-if$ -- 1577
-int.to.chr$ -- 2
-int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 55
-num.names$ -- 64
-pop$ -- 120
-preamble$ -- 1
-purify$ -- 106
-quote$ -- 0
-skip$ -- 249
-stack$ -- 0
-substring$ -- 326
-swap$ -- 2
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 153
-warning$ -- 2
-while$ -- 60
-width$ -- 0
-write$ -- 168
-(There were 4 warnings)
-=======
-You've used 12 entries,
-            3010 wiz_defined-function locations,
-            743 strings with 6279 characters,
-and the built_in function-call counts, 4894 in all, are:
-= -- 439
-> -- 262
-< -- 8
-+ -- 87
-- -- 88
-* -- 366
-:= -- 927
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 73
-chr.to.int$ -- 12
-cite$ -- 12
-duplicate$ -- 217
-empty$ -- 323
-format.name$ -- 107
-if$ -- 980
+            821 strings with 9588 characters,
+and the built_in function-call counts, 10410 in all, are:
+= -- 833
+> -- 750
+< -- 13
++ -- 250
+- -- 255
+* -- 871
+:= -- 1997
+add.period$ -- 23
+call.type$ -- 23
+change.case$ -- 139
+chr.to.int$ -- 23
+cite$ -- 27
+duplicate$ -- 418
+empty$ -- 642
+format.name$ -- 289
+if$ -- 2050
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 40
-num.names$ -- 48
-pop$ -- 73
+int.to.str$ -- 0
+missing$ -- 21
+newline$ -- 73
+num.names$ -- 88
+pop$ -- 152
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 139
 quote$ -- 0
-skip$ -- 192
+skip$ -- 350
 stack$ -- 0
-substring$ -- 251
+substring$ -- 461
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 0
-while$ -- 47
+type$ -- 207
+warning$ -- 2
+while$ -- 84
 width$ -- 0
-write$ -- 122
->>>>>>> 1c40ae54a995ca49ff7741c3848963e981f248ae
+write$ -- 228
+(There were 5 warnings)
